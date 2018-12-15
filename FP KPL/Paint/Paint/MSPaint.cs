@@ -107,9 +107,35 @@ namespace Paint
             }
         }
 
+        /*We will return to this section later on to the code the mouse display position*/
         private void Paint_Canvas_MouseDown(object sender, MouseEventArgs e)
         {
+            
+        }
 
+        /*This section determines what happens when the mouse is moving on the canvas*/
+        private void Paint_Canvas_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                mouseCurrentX = e.X - mouseCurrentX;
+                mouseCurrentY = e.Y - mouseCurrentY;
+
+                Paint_Canvas.Invalidate();
+            }
+            else
+            {
+                Paint_Canvas.Invalidate();
+            }
+            /*The following syntax will calculate and determine where the rectengle should be drawn*/
+            recStartPositionX = Math.Min(mouseStartX, e.X);
+            /*The Y value or our rectangle should also be the minimum between the start Y value and the current Y value*/
+            recStartPositionY = Math.Min(mouseStartY, e.Y);
+            /*The widht (reSizeX) of or rectangle should be the maximum between the start X position and the current X position
+             * minus the minimum of the start X position and the current X position*/
+            recSizeX = Math.Max(mouseStartX, e.X) - Math.Min(mouseStartX, e.X);
+            /*For the height(recSizeY) value, it is basically the same thing as above, but now with the Y values*/
+            recSizeY = Math.Max(mouseStartY, e.Y) - Math.Min(mouseStartY, e.Y);
         }
     }
 }

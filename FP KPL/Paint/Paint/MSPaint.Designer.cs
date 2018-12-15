@@ -114,7 +114,7 @@
             this.ToolBar.Location = new System.Drawing.Point(0, 0);
             this.ToolBar.Name = "ToolBar";
             this.ToolBar.Padding = new System.Windows.Forms.Padding(0);
-            this.ToolBar.Size = new System.Drawing.Size(1267, 47);
+            this.ToolBar.Size = new System.Drawing.Size(3379, 47);
             this.ToolBar.TabIndex = 0;
             this.ToolBar.Text = "Tool Bar";
             // 
@@ -169,7 +169,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(44, 44);
+            this.toolStripLabel1.Size = new System.Drawing.Size(113, 44);
             this.toolStripLabel1.Text = "Shapes";
             // 
             // toolStripSeparator5
@@ -213,7 +213,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(66, 44);
+            this.toolStripLabel2.Size = new System.Drawing.Size(165, 44);
             this.toolStripLabel2.Text = "Line Colors";
             // 
             // toolStripSeparator7
@@ -292,7 +292,7 @@
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(54, 44);
+            this.toolStripLabel3.Size = new System.Drawing.Size(134, 44);
             this.toolStripLabel3.Text = "Fill Color";
             // 
             // toolStripSeparator9
@@ -371,7 +371,7 @@
             // toolStripLabel4
             // 
             this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(52, 44);
+            this.toolStripLabel4.Size = new System.Drawing.Size(133, 44);
             this.toolStripLabel4.Text = "Line Size";
             // 
             // toolStripSeparator11
@@ -385,7 +385,7 @@
             this.lineSize.Image = global::Paint.Properties.Resources.Artboard_15;
             this.lineSize.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.lineSize.Name = "lineSize";
-            this.lineSize.Size = new System.Drawing.Size(56, 44);
+            this.lineSize.Size = new System.Drawing.Size(73, 44);
             this.lineSize.Text = "Line Size";
             // 
             // toolStripSeparator12
@@ -397,23 +397,24 @@
             // 
             this.Paint_Canvas.BackColor = System.Drawing.Color.White;
             this.Paint_Canvas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Paint_Canvas.Location = new System.Drawing.Point(10, 48);
-            this.Paint_Canvas.Margin = new System.Windows.Forms.Padding(1);
+            this.Paint_Canvas.Location = new System.Drawing.Point(27, 114);
+            this.Paint_Canvas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Paint_Canvas.Name = "Paint_Canvas";
-            this.Paint_Canvas.Size = new System.Drawing.Size(1247, 351);
+            this.Paint_Canvas.Size = new System.Drawing.Size(3319, 831);
             this.Paint_Canvas.TabIndex = 1;
             this.Paint_Canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.Paint_Canvas_Paint);
             this.Paint_Canvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Paint_Canvas_MouseDown);
+            this.Paint_Canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Paint_Canvas_MouseMove);
             this.Paint_Canvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Paint_Canvas_MouseUp);
             // 
             // myPaint
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1267, 409);
+            this.ClientSize = new System.Drawing.Size(3379, 975);
             this.Controls.Add(this.Paint_Canvas);
             this.Controls.Add(this.ToolBar);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "myPaint";
             this.Text = "Paint";
             this.ToolBar.ResumeLayout(false);
