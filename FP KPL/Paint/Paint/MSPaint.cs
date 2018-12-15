@@ -137,5 +137,115 @@ namespace Paint
             /*For the height(recSizeY) value, it is basically the same thing as above, but now with the Y values*/
             recSizeY = Math.Max(mouseStartY, e.Y) - Math.Min(mouseStartY, e.Y);
         }
+
+        /*This button will allow the user to draw a line*/
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            shapeSelected = 1;
+        }
+
+        /*This button will allow the user to draw a ellipse*/
+        private void CircleBtn_Click(object sender, EventArgs e)
+        {
+            shapeSelected = 2;
+        }
+
+        /*This button will allow the user to draw a rectangle*/
+        private void Rectangle_Btn_Click(object sender, EventArgs e)
+        {
+            shapeSelected = 3;
+        }
+
+        /*This button will allow the line of the drawings to the black*/
+        private void Black_Btn_Click(object sender, EventArgs e)
+        {
+            linePaintColor = Color.Black;
+        }
+
+        /*This button will allow the line of the drawings to the blue*/
+        private void Blue_Btn_Click(object sender, EventArgs e)
+        {
+            linePaintColor = Color.Blue;
+        }
+
+        /*This button will allow the line of the drawings to the green*/
+        private void Green_Btn_Click(object sender, EventArgs e)
+        {
+            linePaintColor = Color.Green;
+        }
+
+        /*This button will allow the line of the drawings to the purple*/
+        private void Purple_Btn_Click(object sender, EventArgs e)
+        {
+            linePaintColor = Color.Purple;
+        }
+
+        /*This button will allow the line of the drawings to the red*/
+        private void Red_Btn_Click(object sender, EventArgs e)
+        {
+            linePaintColor = Color.Red;
+        }
+
+        /*This button will allow the line of the drawings to the yellow*/
+        private void Yellow_Btn_Click(object sender, EventArgs e)
+        {
+            linePaintColor = Color.Yellow;
+        }
+
+        /*This button will calls the color wheel command for more color*/
+        private void MoreColor_Btn_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorWheel = new ColorDialog();
+            if (colorWheel.ShowDialog() == DialogResult.OK)
+            {
+                linePaintColor = colorWheel.Color;
+            }
+        }
+
+        /*This button will allow the line fill of the drawings to the black*/
+        private void toolStripButton14_Click(object sender, EventArgs e)
+        {
+            lineFillPaintColor = Color.Black;
+        }
+
+        /*This button will allow the line of the drawings to the blue*/
+        private void toolStripButton15_Click(object sender, EventArgs e)
+        {
+            lineFillPaintColor = Color.Blue;
+        }
+
+        /*This button will allow the line of the drawings to the green*/
+        private void toolStripButton16_Click(object sender, EventArgs e)
+        {
+            lineFillPaintColor = Color.Green;
+        }
+
+        /*This button will allow the line of the drawings to the purple*/
+        private void toolStripButton17_Click(object sender, EventArgs e)
+        {
+            lineFillPaintColor = Color.Purple;
+        }
+
+        /*This button will allow the line of the drawings to the red*/
+        private void toolStripButton18_Click(object sender, EventArgs e)
+        {
+            lineFillPaintColor = Color.Red;
+        }
+
+        /*This button will allow the line of the drawings to the yellow*/
+        private void toolStripButton19_Click(object sender, EventArgs e)
+        {
+            lineFillPaintColor = Color.Yellow;
+        }
+
+        /*This button will calls the color wheel command for more color*/
+        private void toolStripButton20_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorWheel = new ColorDialog();
+            if (colorWheel.ShowDialog() == DialogResult.OK)
+            {
+                linePaintColor = colorWheel.Color;
+            }
+        }
     }
 }

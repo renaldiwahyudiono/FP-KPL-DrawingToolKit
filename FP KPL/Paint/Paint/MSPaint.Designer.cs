@@ -114,14 +114,14 @@
             this.ToolBar.Location = new System.Drawing.Point(0, 0);
             this.ToolBar.Name = "ToolBar";
             this.ToolBar.Padding = new System.Windows.Forms.Padding(0);
-            this.ToolBar.Size = new System.Drawing.Size(3379, 47);
+            this.ToolBar.Size = new System.Drawing.Size(3379, 48);
             this.ToolBar.TabIndex = 0;
             this.ToolBar.Text = "Tool Bar";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 48);
             // 
             // clrBtn
             // 
@@ -129,14 +129,14 @@
             this.clrBtn.Image = global::Paint.Properties.Resources.Artboard_1_copy_2;
             this.clrBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.clrBtn.Name = "clrBtn";
-            this.clrBtn.Size = new System.Drawing.Size(44, 44);
+            this.clrBtn.Size = new System.Drawing.Size(44, 45);
             this.clrBtn.Text = "toolStripButton1";
             this.clrBtn.ToolTipText = "Clear Button";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 48);
             // 
             // SaveBtn
             // 
@@ -144,13 +144,13 @@
             this.SaveBtn.Image = global::Paint.Properties.Resources.Artboard_1;
             this.SaveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(44, 44);
+            this.SaveBtn.Size = new System.Drawing.Size(44, 45);
             this.SaveBtn.Text = "Save";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 48);
             // 
             // OpenBtn
             // 
@@ -158,24 +158,24 @@
             this.OpenBtn.Image = global::Paint.Properties.Resources.Artboard_1_copy;
             this.OpenBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.OpenBtn.Name = "OpenBtn";
-            this.OpenBtn.Size = new System.Drawing.Size(44, 44);
+            this.OpenBtn.Size = new System.Drawing.Size(44, 45);
             this.OpenBtn.Text = "Open";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 48);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(113, 44);
+            this.toolStripLabel1.Size = new System.Drawing.Size(113, 45);
             this.toolStripLabel1.Text = "Shapes";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 48);
             // 
             // toolStripButton4
             // 
@@ -183,9 +183,10 @@
             this.toolStripButton4.Image = global::Paint.Properties.Resources.Artboard_1_copy_4;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton4.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton4.Text = "Line";
             this.toolStripButton4.ToolTipText = "Line Selection";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // CircleBtn
             // 
@@ -193,8 +194,9 @@
             this.CircleBtn.Image = global::Paint.Properties.Resources.Artboard_1_copy_5;
             this.CircleBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CircleBtn.Name = "CircleBtn";
-            this.CircleBtn.Size = new System.Drawing.Size(44, 44);
+            this.CircleBtn.Size = new System.Drawing.Size(44, 45);
             this.CircleBtn.Text = "Circle";
+            this.CircleBtn.Click += new System.EventHandler(this.CircleBtn_Click);
             // 
             // Rectangle_Btn
             // 
@@ -202,24 +204,25 @@
             this.Rectangle_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_6;
             this.Rectangle_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Rectangle_Btn.Name = "Rectangle_Btn";
-            this.Rectangle_Btn.Size = new System.Drawing.Size(44, 44);
+            this.Rectangle_Btn.Size = new System.Drawing.Size(44, 45);
             this.Rectangle_Btn.Text = "Rectangle";
+            this.Rectangle_Btn.Click += new System.EventHandler(this.Rectangle_Btn_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 48);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(165, 44);
+            this.toolStripLabel2.Size = new System.Drawing.Size(165, 45);
             this.toolStripLabel2.Text = "Line Colors";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 48);
             // 
             // Black_Btn
             // 
@@ -227,8 +230,9 @@
             this.Black_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_7;
             this.Black_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Black_Btn.Name = "Black_Btn";
-            this.Black_Btn.Size = new System.Drawing.Size(44, 44);
+            this.Black_Btn.Size = new System.Drawing.Size(44, 45);
             this.Black_Btn.Text = "Black";
+            this.Black_Btn.Click += new System.EventHandler(this.Black_Btn_Click);
             // 
             // Blue_Btn
             // 
@@ -236,8 +240,9 @@
             this.Blue_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_9;
             this.Blue_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Blue_Btn.Name = "Blue_Btn";
-            this.Blue_Btn.Size = new System.Drawing.Size(44, 44);
+            this.Blue_Btn.Size = new System.Drawing.Size(44, 45);
             this.Blue_Btn.Text = "Blue";
+            this.Blue_Btn.Click += new System.EventHandler(this.Blue_Btn_Click);
             // 
             // Green_Btn
             // 
@@ -245,8 +250,9 @@
             this.Green_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_10;
             this.Green_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Green_Btn.Name = "Green_Btn";
-            this.Green_Btn.Size = new System.Drawing.Size(44, 44);
+            this.Green_Btn.Size = new System.Drawing.Size(44, 45);
             this.Green_Btn.Text = "Green";
+            this.Green_Btn.Click += new System.EventHandler(this.Green_Btn_Click);
             // 
             // Purple_Btn
             // 
@@ -254,8 +260,9 @@
             this.Purple_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_12;
             this.Purple_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Purple_Btn.Name = "Purple_Btn";
-            this.Purple_Btn.Size = new System.Drawing.Size(44, 44);
+            this.Purple_Btn.Size = new System.Drawing.Size(44, 45);
             this.Purple_Btn.Text = "Purple";
+            this.Purple_Btn.Click += new System.EventHandler(this.Purple_Btn_Click);
             // 
             // Red_Btn
             // 
@@ -263,8 +270,9 @@
             this.Red_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_8;
             this.Red_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Red_Btn.Name = "Red_Btn";
-            this.Red_Btn.Size = new System.Drawing.Size(44, 44);
+            this.Red_Btn.Size = new System.Drawing.Size(44, 45);
             this.Red_Btn.Text = "Red";
+            this.Red_Btn.Click += new System.EventHandler(this.Red_Btn_Click);
             // 
             // Yellow_Btn
             // 
@@ -272,8 +280,9 @@
             this.Yellow_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_11;
             this.Yellow_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Yellow_Btn.Name = "Yellow_Btn";
-            this.Yellow_Btn.Size = new System.Drawing.Size(44, 44);
+            this.Yellow_Btn.Size = new System.Drawing.Size(44, 45);
             this.Yellow_Btn.Text = "Yellow";
+            this.Yellow_Btn.Click += new System.EventHandler(this.Yellow_Btn_Click);
             // 
             // MoreColor_Btn
             // 
@@ -281,24 +290,25 @@
             this.MoreColor_Btn.Image = global::Paint.Properties.Resources.Artboard_1_copy_3;
             this.MoreColor_Btn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MoreColor_Btn.Name = "MoreColor_Btn";
-            this.MoreColor_Btn.Size = new System.Drawing.Size(44, 44);
+            this.MoreColor_Btn.Size = new System.Drawing.Size(44, 45);
             this.MoreColor_Btn.Text = "More Colors";
+            this.MoreColor_Btn.Click += new System.EventHandler(this.MoreColor_Btn_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 48);
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(134, 44);
+            this.toolStripLabel3.Size = new System.Drawing.Size(134, 45);
             this.toolStripLabel3.Text = "Fill Color";
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 48);
             // 
             // toolStripButton14
             // 
@@ -306,8 +316,9 @@
             this.toolStripButton14.Image = global::Paint.Properties.Resources.Artboard_1_copy_7;
             this.toolStripButton14.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton14.Name = "toolStripButton14";
-            this.toolStripButton14.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton14.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton14.Text = "toolStripButton14";
+            this.toolStripButton14.Click += new System.EventHandler(this.toolStripButton14_Click);
             // 
             // toolStripButton15
             // 
@@ -315,8 +326,9 @@
             this.toolStripButton15.Image = global::Paint.Properties.Resources.Artboard_1_copy_9;
             this.toolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton15.Name = "toolStripButton15";
-            this.toolStripButton15.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton15.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton15.Text = "toolStripButton15";
+            this.toolStripButton15.Click += new System.EventHandler(this.toolStripButton15_Click);
             // 
             // toolStripButton16
             // 
@@ -324,8 +336,9 @@
             this.toolStripButton16.Image = global::Paint.Properties.Resources.Artboard_1_copy_10;
             this.toolStripButton16.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton16.Name = "toolStripButton16";
-            this.toolStripButton16.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton16.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton16.Text = "toolStripButton16";
+            this.toolStripButton16.Click += new System.EventHandler(this.toolStripButton16_Click);
             // 
             // toolStripButton17
             // 
@@ -333,8 +346,9 @@
             this.toolStripButton17.Image = global::Paint.Properties.Resources.Artboard_1_copy_12;
             this.toolStripButton17.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton17.Name = "toolStripButton17";
-            this.toolStripButton17.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton17.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton17.Text = "toolStripButton17";
+            this.toolStripButton17.Click += new System.EventHandler(this.toolStripButton17_Click);
             // 
             // toolStripButton18
             // 
@@ -342,8 +356,9 @@
             this.toolStripButton18.Image = global::Paint.Properties.Resources.Artboard_1_copy_8;
             this.toolStripButton18.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton18.Name = "toolStripButton18";
-            this.toolStripButton18.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton18.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton18.Text = "toolStripButton18";
+            this.toolStripButton18.Click += new System.EventHandler(this.toolStripButton18_Click);
             // 
             // toolStripButton19
             // 
@@ -351,8 +366,9 @@
             this.toolStripButton19.Image = global::Paint.Properties.Resources.Artboard_1_copy_11;
             this.toolStripButton19.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton19.Name = "toolStripButton19";
-            this.toolStripButton19.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton19.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton19.Text = "toolStripButton19";
+            this.toolStripButton19.Click += new System.EventHandler(this.toolStripButton19_Click);
             // 
             // toolStripButton20
             // 
@@ -360,24 +376,25 @@
             this.toolStripButton20.Image = global::Paint.Properties.Resources.Artboard_1_copy_3;
             this.toolStripButton20.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton20.Name = "toolStripButton20";
-            this.toolStripButton20.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton20.Size = new System.Drawing.Size(44, 45);
             this.toolStripButton20.Text = "toolStripButton20";
+            this.toolStripButton20.Click += new System.EventHandler(this.toolStripButton20_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 48);
             // 
             // toolStripLabel4
             // 
             this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(133, 44);
+            this.toolStripLabel4.Size = new System.Drawing.Size(133, 45);
             this.toolStripLabel4.Text = "Line Size";
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 48);
             // 
             // lineSize
             // 
@@ -385,13 +402,13 @@
             this.lineSize.Image = global::Paint.Properties.Resources.Artboard_15;
             this.lineSize.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.lineSize.Name = "lineSize";
-            this.lineSize.Size = new System.Drawing.Size(73, 44);
+            this.lineSize.Size = new System.Drawing.Size(73, 45);
             this.lineSize.Text = "Line Size";
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 48);
             // 
             // Paint_Canvas
             // 
