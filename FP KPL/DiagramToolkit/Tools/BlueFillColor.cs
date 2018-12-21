@@ -7,7 +7,7 @@ namespace DiagramToolkit.Tools
     public class BlueFillColor : ToolStripButton, ITool
     {
         private ICanvas canvas;
-        private Rectangle rectangle;
+        private Rectangles rectangle;
 
         public Cursor Cursor
         {
@@ -42,7 +42,7 @@ namespace DiagramToolkit.Tools
         {
             if (e.Button == MouseButtons.Left)
             {
-                this.rectangle = new Rectangle(e.X, e.Y);
+                this.rectangle = new Rectangles(e.X, e.Y);
                 this.canvas.AddDrawingObject(this.rectangle);
             }
         }

@@ -9,6 +9,8 @@ namespace DiagramToolkit
     public abstract class DrawingObject
     {
         public Guid ID { get; set; }
+        public Brush brush { get; set; }
+        public Pen pen { get; set; }
 
         public DrawingState State
         {

@@ -63,6 +63,12 @@ namespace DiagramToolkit
             this.toolbox.AddTool(new RectangleTool());
             this.toolbox.AddTool(new TextTool());
             this.toolbox.ToolSelected += Toolbox_ToolSelected;
+            this.toolbox.AddTool(new RedFillColor());
+            this.toolbox.AddTool(new BlueFillColor());
+            this.toolbox.AddTool(new GreenFillColor());
+            this.toolbox.AddTool(new RedBorderColor());
+            this.toolbox.AddTool(new BlueBorderColor());
+            this.toolbox.AddTool(new GreenBorderColor());
 
             #endregion
 

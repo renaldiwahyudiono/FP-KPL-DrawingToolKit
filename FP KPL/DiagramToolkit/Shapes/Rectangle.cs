@@ -6,30 +6,30 @@ using System.Drawing.Drawing2D;
 
 namespace DiagramToolkit.Shapes
 {
-    public class Rectangle : DrawingObject
+    public class Rectangles : DrawingObject
     {
         public int X { get; set; }
         public int Y { get; set; }
         public int Width { get; set; }
         public int Height { get; set; }
 
-        private Pen pen;
         private List<DrawingObject> drawingObjects;
 
-        public Rectangle()
+        public Rectangles()
         {
             this.pen = new Pen(Color.Black);
-            pen.Width = 1.5f;
+            this.brush = Brushes.OrangeRed;
+            this. pen.Width = 1.5f;
             drawingObjects = new List<DrawingObject>();
         }
 
-        public Rectangle(int x, int y) : this()
+        public Rectangles(int x, int y) : this()
         {
             this.X = x;
             this.Y = y;
         }
 
-        public Rectangle(int x, int y, int width, int height) : this(x, y)
+        public Rectangles(int x, int y, int width, int height) : this(x, y)
         {
             this.Width = width;
             this.Height = height;
@@ -47,9 +47,8 @@ namespace DiagramToolkit.Shapes
 
         public override void RenderOnStaticView()
         {
-            this.pen.Color = Color.Black;
             this.pen.DashStyle = DashStyle.Solid;
-            GetGraphics().FillRectangle(Brushes.Red, X, Y, Width, Height);
+            GetGraphics().FillRectangle(this.brush, X, Y, Width, Height);
             GetGraphics().DrawRectangle(this.pen, X, Y, Width, Height);
 
             foreach (DrawingObject obj in drawingObjects)
@@ -61,9 +60,8 @@ namespace DiagramToolkit.Shapes
 
         public override void RenderOnEditingView()
         {
-            this.pen.Color = Color.Blue;
             this.pen.DashStyle = DashStyle.Solid;
-            GetGraphics().FillRectangle(Brushes.Red, X, Y, Width, Height);
+            GetGraphics().FillRectangle(this.brush, X, Y, Width, Height);
             GetGraphics().DrawRectangle(this.pen, X, Y, Width, Height);
 
             foreach (DrawingObject obj in drawingObjects)
@@ -76,9 +74,8 @@ namespace DiagramToolkit.Shapes
 
         public override void RenderOnPreview()
         {
-            this.pen.Color = Color.Red;
             this.pen.DashStyle = DashStyle.DashDot;
-            GetGraphics().FillRectangle(Brushes.Red, X, Y, Width, Height);
+            GetGraphics().FillRectangle(this.brush, X, Y, Width, Height);
             GetGraphics().DrawRectangle(this.pen, X, Y, Width, Height);
 
             foreach (DrawingObject obj in drawingObjects)
