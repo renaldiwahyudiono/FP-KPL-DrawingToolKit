@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace DiagramToolkit.Tools
 {
-    public class RedFillColor : ToolStripButton, ITool
+    public class RedBorderColor : ToolStripButton, ITool
     {
         private ICanvas canvas;
         private Rectangle rectangle;
@@ -30,10 +30,10 @@ namespace DiagramToolkit.Tools
             }
         }
 
-        public RedFillColor()
+        public RedBorderColor()
         {
-            this.Name = "Red Fill Color";
-            this.ToolTipText = "Red Fill Color";
+            this.Name = "Red Border Color";
+            this.ToolTipText = "Red Border Color";
             this.Image = IconSet.bounding_box;
             this.CheckOnClick = true;
         }

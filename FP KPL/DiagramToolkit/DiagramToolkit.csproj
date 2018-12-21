@@ -104,17 +104,29 @@
     <Compile Include="ToolbarItems\ExampleToolbarItem.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Tools\BlueBorderColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\BlueFillColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\GreenBorderColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\GreenFillColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Tools\LineTool.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tools\RectangleTool.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Tools\RedFillColor.cs">
+    <Compile Include="Tools\RedBorderColor.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Tools\RedFillColor.Designer.cs">
-      <DependentUpon>RedFillColor.cs</DependentUpon>
+    <Compile Include="Tools\RedFillColor.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tools\SelectionTool.cs">
       <SubType>Component</SubType>
