@@ -36,7 +36,7 @@ namespace DiagramToolkit.Tools
         {
             this.Name = "Green Fill Color";
             this.ToolTipText = "Green Fill Color";
-            this.Image = IconSet.bounding_box;
+            this.Image = IconSet.Artboard_1_copy_10;
             this.CheckOnClick = true;
         }
 

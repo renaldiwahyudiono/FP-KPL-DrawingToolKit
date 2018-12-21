@@ -1,5 +1,6 @@
 ﻿using DiagramToolkit.Shapes;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace DiagramToolkit.Tools
@@ -7,7 +8,7 @@ namespace DiagramToolkit.Tools
     public class BlueBorderColor : ToolStripButton, ITool
     {
         private ICanvas canvas;
-        private Rectangles rectangle;
+        private DrawingObject selectedObj;
 
         public Cursor Cursor
         {
@@ -34,7 +35,7 @@ namespace DiagramToolkit.Tools
         {
             this.Name = "Blue Border Color";
             this.ToolTipText = "Blue Border Color";
-            this.Image = IconSet.bounding_box;
+            this.Image = IconSet.Artboard_1_copy_9;
             this.CheckOnClick = true;
         }
 
@@ -42,42 +43,22 @@ namespace DiagramToolkit.Tools
         {
             if (e.Button == MouseButtons.Left)
             {
-                this.rectangle = new Rectangles(e.X, e.Y);
-                this.canvas.AddDrawingObject(this.rectangle);
+                selectedObj = canvas.GetObjectAt(e.X, e.Y);
+                if (selectedObj is Rectangles)
+                {
+                    selectedObj.pen.Color = Color.Blue;
+                }
             }
         }
 
         public void ToolMouseMove(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                if (this.rectangle != null)
-                {
-                    int width = e.X - this.rectangle.X;
-                    int height = e.Y - this.rectangle.Y;
 
-                    if (width > 0 && height > 0)
-                    {
-                        this.rectangle.Width = width;
-                        this.rectangle.Height = height;
-                    }
-                }
-            }
         }
 
         public void ToolMouseUp(object sender, MouseEventArgs e)
         {
-            if (rectangle != null)
-            {
-                if (e.Button == MouseButtons.Left)
-                {
-                    this.rectangle.Select();
-                }
-                else if (e.Button == MouseButtons.Right)
-                {
-                    canvas.RemoveDrawingObject(this.rectangle);
-                }
-            }
+
         }
 
         public void ToolMouseDoubleClick(object sender, MouseEventArgs e)

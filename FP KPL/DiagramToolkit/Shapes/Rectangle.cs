@@ -19,7 +19,7 @@ namespace DiagramToolkit.Shapes
         {
             this.pen = new Pen(Color.Black);
             this.brush = Brushes.OrangeRed;
-            this. pen.Width = 1.5f;
+            this. pen.Width = 3f;
             drawingObjects = new List<DrawingObject>();
         }
 
